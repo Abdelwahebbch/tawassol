@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 
 class IntoductionCard extends StatelessWidget {
-  final int balance;
-
-  const IntoductionCard({super.key, required this.balance});
+  const IntoductionCard({super.key});
 
   @override
   Widget build(BuildContext context) {
