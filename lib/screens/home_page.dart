@@ -72,7 +72,7 @@ class _HomeScreenState extends State<HomeScreen> {
     },
     {
       "name": "TunisianStartups",
-      "shortDesc": "Communauté & Think Tank",
+      "shortDesc": "Communauté  & Think Tank",
       "longDescripton":
           "TunisianStartups est une ONG qui met en relation les entrepreneurs, organise des événements, milite pour des politiques publiques favorables aux startups et propose des ressources pour le développement d’écosystèmes. :contentReference[oaicite:5]{index=5}",
       "services":
