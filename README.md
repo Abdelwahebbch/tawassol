@@ -3,32 +3,32 @@
 
 ## Captures d’écran
 
-1. **Écran d’accueil**  
-![Accueil](images/Tawassol/1.png)  
+1. **Login Screen**  
+![Login Screen](images/Tawassol/1.png)  
 
 2. **Menu principal / Drawer**  
-![Menu](images/Tawassol/1.png)  
+![Drawer](images/Tawassol/2.png)  
 
-3. **Liste des opportunités**  
-![Opportunités](images/Tawassol/1.png)  
+3. **Profil utilisateur**  
+![Profil utilisateur](images/Tawassol/3.png)  
 
-4. **Fiche d’une structure**  
-![Structure](images/Tawassol/1.png)  
+4. **À propos / Informations**  
+![À propos / Informations](images/Tawassol/4.png)  
 
-5. **Chatbot**  
-![Chatbot](images/Tawassol/1.png)  
+5. **Plan ou abonnement**  
+![Plan ou abonnement](images/Tawassol/5.png)  
 
-6. **Profil utilisateur**  
-![Profil](images/Tawassol/1.png)  
+6. **Plan ou abonnement**  
+![Plan ou abonnement](images/Tawassol/6.png)  
 
-7. **Plan ou abonnement**  
-![Plan](images/Tawassol/1.png)  
+7. **Liste des opportunités**  
+![Liste des opportunités](images/Tawassol/7.png)  
 
-8. **Recherche de structures**  
-![Recherche](images/Tawassol/1.png)  
+8. **Fiche d’une structure**  
+![Fiche d’une structure](images/Tawassol/8.png)  
 
-9. **Notifications**  
-![Notifications](images/Tawassol/1.png)  
+9. **Formulaire**  
+![Formulair](images/Tawassol/9.png)  
 
-10. **À propos / Informations**  
-![À propos](images/Tawassol/1.png)  
+10. **Chatbot**  
+![Chatbot](images/Tawassol/10.png)  
