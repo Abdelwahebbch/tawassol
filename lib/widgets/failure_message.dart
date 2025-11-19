@@ -25,11 +25,7 @@ class FailureMessage extends StatelessWidget {
         ),
         child: Row(
           children: [
-            const Icon(
-              Icons.close,
-              color: Colors.white,
-              size: 24,
-            ),
+            const Icon(Icons.error, color: Colors.white, size: 24),
             const SizedBox(width: 12),
             Expanded(
               child: Column(
