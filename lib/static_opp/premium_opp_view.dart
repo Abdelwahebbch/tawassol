@@ -3,13 +3,13 @@ import '../screens/reusable_widgets.dart';
 
 class PremiumOppView extends StatefulWidget {
   final String structName;
-  final String longDescripton;
+  final String longDescription;
   final String services;
   final String contact;
   const PremiumOppView({
     super.key,
     required this.structName,
-    required this.longDescripton,
+    required this.longDescription,
     required this.services,
     required this.contact,
   });
@@ -75,7 +75,7 @@ class _PremiumOppViewState extends State<PremiumOppView> {
                 buildSection(
                   context,
                   'Description',
-                  widget.longDescripton,
+                  widget.longDescription,
                   Icons.info_outline,
                 ),
                 const SizedBox(height: 24),
