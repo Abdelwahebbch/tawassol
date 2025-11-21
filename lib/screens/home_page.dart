@@ -81,7 +81,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 title: const Text('Upgrade Your Experience !'),
                 onTap: () {
                   Navigator.pop(context);
-                  Navigator.pushNamed(context, '/plans');
+                  Navigator.pushNamed(context, '/plans', arguments: userData);
                 },
               ),
               const Divider(),
@@ -201,7 +201,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             ? ListView.builder(
                                 shrinkWrap: true,
                                 itemCount: userData?["Plan"] == "Free"
-                                    ? 10
+                                    ? 5
                                     : structures.length,
                                 itemBuilder: (context, index) {
                                   return StructureInfo(

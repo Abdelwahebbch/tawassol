@@ -4,9 +4,13 @@ class StructureInfo extends StatelessWidget {
   final VoidCallback onPressed;
   final String structname;
   final String structShortDisc;
+  final bool isPremium;
+  final VoidCallback showPaiment;
 
   const StructureInfo({
     super.key,
+    required this.showPaiment,
+    required this.isPremium,
     required this.structname,
     required this.structShortDisc,
     required this.onPressed,
@@ -22,7 +26,7 @@ class StructureInfo extends StatelessWidget {
           width: double.infinity,
           height: 73,
           child: ElevatedButton(
-            onPressed: onPressed,
+            onPressed: isPremium ? onPressed : showPaiment,
             style: ElevatedButton.styleFrom(
               backgroundColor: const Color(0xFFEC4899),
               foregroundColor: Colors.white,

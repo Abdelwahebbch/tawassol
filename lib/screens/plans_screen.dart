@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:hackathonpeeug/widgets/plan_widget.dart';
 
-class ShowPlans extends StatelessWidget {
-  const ShowPlans({super.key});
+class PlansScreen extends StatelessWidget {
+  const PlansScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final userData = ModalRoute.of(context)!.settings.arguments as Map?;
+
     return Scaffold(
       appBar: AppBar(
         title: const Text(
@@ -19,10 +21,11 @@ class ShowPlans extends StatelessWidget {
       backgroundColor: Colors.white,
       body: SafeArea(
         child: SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child: Row(
+          scrollDirection: Axis.vertical,
+          child: Column(
             children: [
               PlanModal(
+                isEnabled: false,
                 name: "Free",
                 price: "0 TND",
                 benifs: [
@@ -32,7 +35,7 @@ class ShowPlans extends StatelessWidget {
                   ),
                   const BenefitItem(
                     icon: Icons.lightbulb_circle,
-                    text: "Accès à 10 opportunités par jour",
+                    text: "Accès à 5 opportunités par jour",
                   ),
                   const BenefitItem(
                     icon: Icons.business_center_rounded,
@@ -47,6 +50,7 @@ class ShowPlans extends StatelessWidget {
               ),
               SizedBox(width: 5),
               PlanModal(
+                isEnabled: userData?["Plan"] == "Free" ? true : false,
                 name: "Premium",
                 price: "30 TND / 1000 pts",
                 benifs: [

@@ -25,7 +25,7 @@ class Entrepreneur {
     required this.finTotal,
     required this.score,
   });
-
+  void x() {}
   factory Entrepreneur.fromFireStore(Map<String, dynamic> data) {
     return Entrepreneur(
       name: data['Nom'] ?? "Not Available !",

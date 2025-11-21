@@ -1,28 +1,23 @@
-class Transaction {
-  final String id;
-  final TransactionType type;
-  final int amount; // En tickets
-  final DateTime date;
-  final String description;
-  final TransactionStatus status;
+class Structure {
+  final String name;
+  final String shortDesc;
+  final String longDescription;
+  final String services;
+  final String contact;
+  final StructureInterest type;
+  final OpportunityStatus status;
 
-  Transaction({
-    required this.id,
+  Structure({
+    required this.name,
+    required this.shortDesc,
+    required this.longDescription,
+    required this.services,
+    required this.contact,
     required this.type,
-    required this.amount,
-    required this.date,
-    required this.description,
     required this.status,
   });
 }
 
-enum TransactionType {
-  recharge,
-  usage,
-}
+enum StructureInterest { service, product }
 
-enum TransactionStatus {
-  completed,
-  pending,
-  failed,
-}
+enum OpportunityStatus { finished, pending, canceled }
