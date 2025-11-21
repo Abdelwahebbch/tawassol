@@ -5,9 +5,11 @@ class PlanModal extends StatelessWidget {
   final String price;
   final VoidCallback onPressed;
   final List<BenefitItem> benifs;
+  final bool isEnabled;
 
   const PlanModal({
     super.key,
+    required this.isEnabled,
     required this.name,
     required this.price,
     required this.benifs,
@@ -42,7 +44,6 @@ class PlanModal extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            /// Titre du plan
             Center(
               child: Text(
                 name,
@@ -86,7 +87,6 @@ class PlanModal extends StatelessWidget {
 
             const Spacer(),
 
-            /// Bouton moderne
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
@@ -98,7 +98,7 @@ class PlanModal extends StatelessWidget {
                   ),
                   elevation: 3,
                 ),
-                onPressed: name == "Free" ? null : onPressed,
+                onPressed: isEnabled ? onPressed : null,
                 child: const Text(
                   "Améliorer mon plan",
                   style: TextStyle(
