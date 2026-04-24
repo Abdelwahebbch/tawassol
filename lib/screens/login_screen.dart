@@ -48,6 +48,7 @@ class _LoginScreenState extends State<LoginScreen> {
           Navigator.pushReplacementNamed(context, '/home', arguments: data);
         }
       } catch (e) {
+        print(e);
         if (mounted) {
           setState(() {
             _connectIssue = true;
